@@ -364,6 +364,41 @@ $wp_customize->add_control('Dedicated-member-dropdown', array(
 	'settings'   => 'Dedicated-member-dropdown',
 	'type' => 'dropdown-pages'
 ) );
+
+// Recent Activities
+
+$wp_customize->add_section('Recent-Activities-section', array(
+	'title'=> 'Recent-Activities Section',
+	'priority' => 2,
+	'panel'=> 'banner_panel',
+));
+$wp_customize->add_setting('Recent-Activities-title', array(
+	'default'   => 'Our Recent Work - Case Studies',
+));
+$wp_customize->add_control('Recent-Activities-title', array(
+	'label'      => 'Title Text',
+	'section'    => 'Recent-Activities-section',
+	'settings'   => 'Recent-Activities-title',
+) );
+$wp_customize->add_setting('Recent-Activities-description', array(
+	'default'   => 'Renrehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum aui dolorem eum fugiat quo voluptas nulla pariatur',
+));
+$wp_customize->add_control('Recent-Activities-description', array(
+	'label'      => 'Description',
+	'section'    => 'Recent-Activities-section',
+	'settings'   => 'Recent-Activities-description',
+	'type' => 'textarea'
+
+) );
+$wp_customize->add_setting('Recent-Activities-dropdown', array(
+	'default'   => '',
+));
+$wp_customize->add_control('Recent-Activities-dropdown', array(
+	'label'      => 'Select Template',
+	'section'    => 'Recent-Activities-section',
+	'settings'   => 'Recent-Activities-dropdown',
+	'type' => 'dropdown-pages'
+) );
 //Blog Area
 
 $wp_customize->add_section('Blog-section', array(
