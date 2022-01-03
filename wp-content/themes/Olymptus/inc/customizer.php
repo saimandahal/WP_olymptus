@@ -404,7 +404,7 @@ $wp_customize->add_control('Recent-Activities-dropdown', array(
 $wp_customize->add_section('Blog-section', array(
 	'title'=> 'Blog Section',
 	'priority' => 2,
-	'panel'=> 'banner_panel',
+	'panel'=> 'banner_panel'
 ));
 $wp_customize->add_setting('Blog-title', array(
 	'default'   => 'From Our Latest Articles
